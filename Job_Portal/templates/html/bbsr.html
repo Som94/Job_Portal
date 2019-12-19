@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{%load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/demo.css'%}">
+  </head>
+  <body>
+
+    <h1>Bhubaneswar Jobs Info.. : </h1>
+
+    <div class="row">
+      <div class="column">
+        <img src="{% static 'image/Bbsr1.jpg'%}" width="100%" height="100%">
+      </div>
+      <div class="column">
+        <img src="{% static 'image/jagannatha.jpg'%}" width="100%" height="80%">
+      </div>
+      <div class="column">
+        <img src="{% static 'image/Bbsr2.jpg'%}" width="100%" height="100%">
+      </div>
+    </div>
+
+
+
+    {% if list %}
+    <table>
+      <thead>
+        <th> Date </th>
+        <th> Company </th>
+        <th> Title </th>
+        <th> Eligibility </th>
+        <th> Address </th>
+        <th> Emai Id </th>
+        <th> Phone Number </th>
+      </thead>
+
+      {% for i in list %}
+
+      <tr>
+        <td>{{i.date}}</td>
+        <td>{{i.company}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.eligibility}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.phnumber}}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+
+    {% else %}
+
+    <p> No Record Found..</p>
+
+    {% endif %}
+
+    <h2> If You  want go back to Home page, then <a class="btn btn-primary btn-lg" href="/$" role="button">Click Here</a> </h2>
+
+
+
+  </body>
+</html>

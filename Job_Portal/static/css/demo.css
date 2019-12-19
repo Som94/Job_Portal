@@ -1,0 +1,45 @@
+body{
+  background: url(https://images.unsplash.com/photo-1539362286735-21789f9187f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQzMzEwfQ&auto=format&fit=crop&w=750&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table, th, td {
+  border: 1px solid Gold;
+}
+table {
+  border-collapse: collapse;
+}
+
+td{
+  color: Red;
+
+}
+
+th{
+  color: lime;
+}
+
+h1{
+  color: magenta;
+
+}
+h2{
+  color: darkorange;
+}
+
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 3px;
+
+}
+
+.row {
+
+  clear: both;
+  display: table;
+}
